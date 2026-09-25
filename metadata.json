@@ -1,0 +1,6 @@
+{
+  "name": "Renal Cyst Global Directory",
+  "description": "An accessible, verified international directory of renal cyst and polycystic kidney disease expert hospitals designed for elderly patients.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

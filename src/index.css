@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* High visibility focus ring for elderly keyboard and screen reader accessibility */
+*:focus-visible {
+  outline: 3px solid #2563eb !important;
+  outline-offset: 3px !important;
+}
+
+/* Print specific styles for elderly care sheets */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 16pt !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 24pt;
+    border: 2pt solid black !important;
+    padding: 18pt !important;
+  }
+}
